@@ -1,3 +1,48 @@
 * {
-  background-color: black;
+  background-color: #f7f5fd;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #ffffff;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* <-- ESSENCIAL */
+}
+
+#logob {
+  margin-left: 100px;
+}
+
+#logob2 {
+  border-radius: 10px;
+  margin-left: 65%;
+  margin-top: 5%;
+  width: 400px;
+  height: 400px;
+}
+
+.botoes {
+  background-color: #ffffff;
+  margin-right: 100px;
+  display: flex;
+  gap: 10px; /* espaço entre os botões */
+}
+
+#botaoum {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 20px;
+}
+
+#botaodois {
+  color: #ffffff;
+  background-color: #3366ff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
 }
