@@ -172,6 +172,7 @@ header {
 #bolalogo,
 #maislogo,
 #tesouralogo {
+  background-color: white;
   width: 90px;
   height: 80px;
   margin-bottom: 20px;
@@ -192,4 +193,73 @@ header {
   color: rgb(89, 89, 89);
   background: transparent;
   text-align: center;
+}
+
+.divfora3 {
+  background-color: #ece7fb;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* container geral da seção */
+.container-depoimento {
+  background-color: #ece7fb;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  max-width: 1000px;
+}
+
+/* imagem da pessoa */
+.foto img {
+  background-color: #ece7fb;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* texto do depoimento */
+.texto-depoimento {
+  background-color: #ece7fb;
+  max-width: 500px;
+  font-family: "Poppins", sans-serif;
+  color: #2d2d2d;
+  position: relative;
+}
+
+/* aspas */
+#aspaspng {
+  background-color: #ece7fb;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+/* parágrafo */
+.texto-depoimento p {
+  background-color: #ece7fb;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #2d2d2d;
+  margin-bottom: 25px;
+}
+
+/* nome da pessoa */
+.nome {
+  background-color: #ece7fb;
+  color: gray;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.homempng {
+  background-color: #ece7fb;
+}
+
+#petworld {
+  background-color: #ece7fb;
 }
