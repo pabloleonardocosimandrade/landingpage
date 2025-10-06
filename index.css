@@ -282,3 +282,81 @@ header {
 #petworld {
   background-color: #ece7fb;
 }
+
+/* seção tipo "Let's talk, woof!" */
+.divfora4 {
+  background-color: #fcfaf5;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* container interno */
+.container-contato {
+  background-color: #fcfaf5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1100px;
+}
+
+/* texto à esquerda */
+.texto-contato {
+  background-color: #fcfaf5;
+  max-width: 500px;
+  font-family: "Poppins", sans-serif;
+}
+
+.texto-contato h1 {
+  background-color: #fcfaf5;
+  font-size: 60px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+}
+
+.texto-contato p {
+  background-color: #fcfaf5;
+  font-size: 18px;
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* botão */
+#botao-contato {
+  background-color: #f8d57e;
+  color: #2d2d2d;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#botao-contato:hover {
+  background-color: #f6c94f;
+}
+
+/* imagem à direita */
+.imagem-contato img {
+  background-color: #fcfaf5;
+  width: 420px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.divfora5 {
+  background-color: #ffffff;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
