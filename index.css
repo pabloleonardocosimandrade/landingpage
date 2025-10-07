@@ -72,6 +72,8 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
+  flex-wrap: wrap; /* 🔧 permite quebra de linha em telas menores */
 }
 
 .texto {
@@ -213,8 +215,6 @@ header {
   max-width: 1000px;
 }
 
-/* imagem da pessoa */
-
 /* texto do depoimento */
 .texto-depoimento {
   background-color: #ece7fb;
@@ -257,17 +257,17 @@ header {
   background-color: #ece7fb;
 }
 
-/* círculo de fundo com a mesma cor da seção */
+/* círculo de fundo */
 .foto-fundo {
-  background-color: #ece7fb; /* mesma cor da divfora3 */
+  background-color: #ece7fb;
   width: 320px;
   height: 320px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* corta o excesso da imagem */
-  box-shadow: 0 0 0 10px #ece7fb; /* garante borda da mesma cor */
+  overflow: hidden;
+  box-shadow: 0 0 0 10px #ece7fb;
 }
 
 /* imagem da pessoa */
@@ -360,6 +360,7 @@ header {
   padding: 80px 0;
 }
 
+/* ===== FOOTER ===== */
 .footer {
   width: 100%;
   background-color: #ffffff;
@@ -385,16 +386,15 @@ header {
   min-width: 280px;
 }
 
-/* Sobe o logo PETWORLD sem mover o resto */
 .footer-logo {
   background-color: white;
   display: flex;
   align-items: center;
   gap: 10px;
   width: 200px;
-  margin-bottom: 10px; /* antes estava 20px */
+  margin-bottom: 10px;
   position: relative;
-  top: -20px; /* 🔼 sobe o logo */
+  top: -20px;
 }
 
 .footer-logo img {
@@ -531,17 +531,113 @@ header {
 }
 
 /* responsividade */
-@media (max-width: 900px) {
-  .footer-container {
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  #logob {
+    margin-left: 0;
+  }
+
+  .botoes {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  #fonteh1 {
+    font-size: 60px;
+    margin-left: 5%;
+  }
+
+  #fonteh5 {
+    font-size: 22px;
+    margin-left: 6%;
+  }
+
+  /* 🔧 CORREÇÃO DA DIV 1 (responsiva em tablets) */
+  #divprincipal {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 40px;
+    padding: 20px 0;
+  }
+
+  .texto {
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .imagem {
+    margin: 30px 0 0 0;
+  }
+
+  #logob2 {
+    width: 80%;
+    height: auto;
+  }
+
+  .divfora {
+    height: auto;
+  }
+
+  #video {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .divfora2 {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .blocos {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .divdentro1,
+  .divdentro2,
+  .divdentro3,
+  .divdentro4 {
+    margin-right: 0;
+  }
+
+  .container-depoimento {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .foto-fundo {
+    width: 250px;
+    height: 250px;
+  }
+
+  .texto-depoimento {
+    max-width: 90%;
+  }
+
+  .container-contato {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagem-contato img {
+    width: 70%;
+    margin-top: 30px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
 
   .footer-links {
     justify-content: center;
-    gap: 50px;
+    margin-top: 30px;
   }
 
   .footer-socials {
@@ -549,9 +645,113 @@ header {
   }
 }
 
-#pett {
-  background-color: white;
-  margin-bottom: 40px;
-  width: 150px;
-  height: 50px;
+/* --- Celulares (até 600px) --- */
+@media (max-width: 600px) {
+  #fonteh1 {
+    font-size: 40px;
+  }
+
+  #fonteh5 {
+    font-size: 18px;
+  }
+
+  /* 🔧 CORREÇÃO EXTRA DA DIV 1 (em celulares) */
+  #divprincipal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .texto {
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  /* 🔧 Correção para imagem responsiva na div principal */
+  #logob2 {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* garante que o contêiner não limite a imagem */
+  .imagem {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .botao button {
+    width: 130px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .divfora {
+    height: auto;
+  }
+
+  #video {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  #patrocinadoreslogo {
+    width: 90%;
+  }
+
+  .blocos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divdentro1,
+  .divdentro2,
+  .divdentro3,
+  .divdentro4 {
+    width: 80%;
+  }
+
+  .foto-fundo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .texto-contato h1 {
+    font-size: 40px;
+  }
+
+  .texto-contato p {
+    font-size: 16px;
+  }
+
+  .imagem-contato img {
+    width: 80%;
+  }
+
+  .footer-logo {
+    top: -10px;
+  }
+
+  #pett {
+    width: 180px;
+  }
+
+  .newsletter input {
+    width: 180px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
 }
