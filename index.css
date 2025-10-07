@@ -549,9 +549,122 @@ header {
   }
 }
 
+<<<<<<< Updated upstream
 #pett {
   background-color: white;
   margin-bottom: 40px;
   width: 150px;
   height: 50px;
+=======
+/* --- Celulares (até 600px) --- */
+@media (max-width: 600px) {
+  #fonteh1 {
+    font-size: 40px;
+  }
+
+  #fonteh5 {
+    font-size: 18px;
+  }
+
+  /* 🔧 CORREÇÃO EXTRA DA DIV 1 (em celulares) */
+  #divprincipal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .texto {
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  /* 🔧 Correção para imagem responsiva na div principal */
+  #logob2 {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* garante que o contêiner não limite a imagem */
+  .imagem {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .botao button {
+    width: 130px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .divfora {
+    height: auto;
+  }
+
+  #video {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  #patrocinadoreslogo {
+    width: 90%;
+  }
+
+  .blocos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divdentro1,
+  .divdentro2,
+  .divdentro3,
+  .divdentro4 {
+    width: 80%;
+  }
+
+  .foto-fundo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .texto-contato h1 {
+    font-size: 40px;
+  }
+
+  .texto-contato p {
+    font-size: 16px;
+  }
+
+  .imagem-contato img {
+    width: 80%;
+  }
+
+  .footer-logo {
+    top: -10px;
+  }
+
+  #pett {
+    width: 200px;
+    height: 200px;
+  }
+
+  .newsletter input {
+    width: 180px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+>>>>>>> Stashed changes
 }
