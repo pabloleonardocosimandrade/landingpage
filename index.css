@@ -195,7 +195,7 @@ header {
 }
 
 .divfora3 {
-  background-color: #ece7fb;
+  background-color: #eff6e6;
   width: 100%;
   height: 600px;
   display: flex;
@@ -204,7 +204,7 @@ header {
 }
 
 .container-depoimento {
-  background-color: #ece7fb;
+  background-color: #eff6e6;
   display: flex;
   align-items: center;
   gap: 80px;
@@ -212,7 +212,7 @@ header {
 }
 
 .texto-depoimento {
-  background-color: #ece7fb;
+  background-color: #eff6e6;
   max-width: 500px;
   font-family: "Poppins", sans-serif;
   color: #2d2d2d;
@@ -220,14 +220,14 @@ header {
 }
 
 #aspaspng {
-  background-color: #ece7fb;
+  background-color: #eff6e6;
   width: 50px;
   height: 50px;
   margin-bottom: 20px;
 }
 
 .texto-depoimento p {
-  background-color: #ece7fb;
+  background-color: #eff6e6;
   font-size: 16px;
   line-height: 1.7;
   color: #2d2d2d;
@@ -235,7 +235,7 @@ header {
 }
 
 .nome {
-  background-color: #ece7fb;
+  background-color: #eff6e6;
   color: gray;
   font-size: 14px;
   font-weight: 400;
@@ -245,11 +245,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ece7fb;
+  background-color: #eff6e6;
 }
 
 .foto-fundo {
-  background-color: #ece7fb;
+  background-color: #eff6e6;
   width: 320px;
   height: 320px;
   border-radius: 50%;
@@ -257,7 +257,7 @@ header {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  box-shadow: 0 0 0 10px #ece7fb;
+  box-shadow: 0 0 0 10px #eff6e6;
 }
 
 #homempng {
@@ -269,11 +269,11 @@ header {
 }
 
 #petworld {
-  background-color: #ece7fb;
+  background-color: #eff6e6;
 }
 
 .divfora4 {
-  background-color: #fcfaf5;
+  background-color: #205fb8;
   width: 100%;
   height: 600px;
   display: flex;
@@ -282,7 +282,7 @@ header {
 }
 
 .container-contato {
-  background-color: #fcfaf5;
+  background-color: #205fb8;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -291,13 +291,13 @@ header {
 }
 
 .texto-contato {
-  background-color: #fcfaf5;
+  background-color: #205fb8;
   max-width: 500px;
   font-family: "Poppins", sans-serif;
 }
 
 .texto-contato h1 {
-  background-color: #fcfaf5;
+  background-color: #205fb8;
   font-size: 60px;
   font-weight: 700;
   color: #2d2d2d;
@@ -305,16 +305,16 @@ header {
 }
 
 .texto-contato p {
-  background-color: #fcfaf5;
+  background-color: #205fb8;
   font-size: 18px;
-  color: #777;
+  color: #ffffff;
   line-height: 1.6;
   margin-bottom: 40px;
 }
 
 #botao-contato {
   background-color: #f8d57e;
-  color: #2d2d2d;
+  color: #ffffff;
   border: none;
   border-radius: 10px;
   padding: 15px 40px;
@@ -329,8 +329,8 @@ header {
 }
 
 .imagem-contato img {
-  background-color: #fcfaf5;
-  width: 420px;
+  background-color: #ffffff;
+  width: 300px;
   height: auto;
   border-radius: 15px;
   object-fit: cover;
