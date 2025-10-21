@@ -73,7 +73,7 @@ header {
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  flex-wrap: wrap; /* 🔧 permite quebra de linha em telas menores */
+  flex-wrap: wrap;
 }
 
 .texto {
@@ -139,7 +139,6 @@ header {
   display: block;
 }
 
-/* container dos blocos */
 .blocos {
   margin-top: 80px;
   display: flex;
@@ -150,7 +149,6 @@ header {
   background-color: white;
 }
 
-/* blocos azuis */
 .divdentro1,
 .divdentro2,
 .divdentro3,
@@ -160,7 +158,7 @@ header {
   width: 230px;
   border-radius: 10px;
   display: flex;
-  flex-direction: column; /* empilha imagem + texto */
+  flex-direction: column;
   align-items: center;
   justify-content: start;
   padding-top: 20px;
@@ -169,7 +167,6 @@ header {
   margin-right: 50px;
 }
 
-/* imagens dentro dos blocos */
 #ossologo,
 #bolalogo,
 #maislogo,
@@ -180,7 +177,6 @@ header {
   margin-bottom: 20px;
 }
 
-/* títulos */
 .titulo {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -188,6 +184,7 @@ header {
   background: transparent;
   text-align: center;
 }
+
 .subtitulo {
   font-family: "Poppins", sans-serif;
   margin-top: 50px;
@@ -206,7 +203,6 @@ header {
   align-items: center;
 }
 
-/* container geral da seção */
 .container-depoimento {
   background-color: #ece7fb;
   display: flex;
@@ -215,7 +211,6 @@ header {
   max-width: 1000px;
 }
 
-/* texto do depoimento */
 .texto-depoimento {
   background-color: #ece7fb;
   max-width: 500px;
@@ -224,7 +219,6 @@ header {
   position: relative;
 }
 
-/* aspas */
 #aspaspng {
   background-color: #ece7fb;
   width: 50px;
@@ -232,7 +226,6 @@ header {
   margin-bottom: 20px;
 }
 
-/* parágrafo */
 .texto-depoimento p {
   background-color: #ece7fb;
   font-size: 16px;
@@ -241,7 +234,6 @@ header {
   margin-bottom: 25px;
 }
 
-/* nome da pessoa */
 .nome {
   background-color: #ece7fb;
   color: gray;
@@ -249,7 +241,6 @@ header {
   font-weight: 400;
 }
 
-/* container da foto */
 .foto {
   display: flex;
   flex-direction: column;
@@ -257,7 +248,6 @@ header {
   background-color: #ece7fb;
 }
 
-/* círculo de fundo */
 .foto-fundo {
   background-color: #ece7fb;
   width: 320px;
@@ -270,7 +260,6 @@ header {
   box-shadow: 0 0 0 10px #ece7fb;
 }
 
-/* imagem da pessoa */
 #homempng {
   width: 100%;
   height: 100%;
@@ -283,7 +272,6 @@ header {
   background-color: #ece7fb;
 }
 
-/* seção tipo "Let's talk, woof!" */
 .divfora4 {
   background-color: #fcfaf5;
   width: 100%;
@@ -293,7 +281,6 @@ header {
   align-items: center;
 }
 
-/* container interno */
 .container-contato {
   background-color: #fcfaf5;
   display: flex;
@@ -303,7 +290,6 @@ header {
   max-width: 1100px;
 }
 
-/* texto à esquerda */
 .texto-contato {
   background-color: #fcfaf5;
   max-width: 500px;
@@ -326,7 +312,6 @@ header {
   margin-bottom: 40px;
 }
 
-/* botão */
 #botao-contato {
   background-color: #f8d57e;
   color: #2d2d2d;
@@ -343,7 +328,6 @@ header {
   background-color: #f6c94f;
 }
 
-/* imagem à direita */
 .imagem-contato img {
   background-color: #fcfaf5;
   width: 420px;
@@ -380,10 +364,15 @@ header {
   max-width: 1300px;
 }
 
+/* 🔧 NOVA VERSÃO: LOGO MAIOR E ALINHADA ACIMA DA NEWSLETTER */
 .footer-left {
   background-color: #ffffff;
   flex: 1;
   min-width: 280px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .footer-logo {
@@ -391,23 +380,21 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 200px;
-  margin-bottom: 10px;
-  position: relative;
-  top: -20px;
+  margin-bottom: 20px;
 }
 
 .footer-logo img {
-  background-color: #ffffff;
-  width: 35px;
+  width: clamp(40px, 3vw, 60px); /* 🔧 cresce conforme o tamanho da tela */
+  height: auto;
+  background-color: white;
 }
 
 .footer-logo h3 {
-  background-color: #ffffff;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: clamp(18px, 1.5vw, 24px);
+  font-weight: 700;
   color: #2d2d2d;
+  background-color: white;
 }
 
 .footer-left p {
@@ -471,7 +458,6 @@ header {
   text-decoration: underline;
 }
 
-/* colunas de links */
 .footer-links {
   background-color: #ffffff;
   display: flex;
@@ -509,7 +495,6 @@ header {
   color: #000;
 }
 
-/* ícones sociais */
 .footer-socials {
   background-color: #ffffff;
   display: flex;
@@ -530,7 +515,7 @@ header {
   fill: #3366ff;
 }
 
-/* responsividade */
+/* 📱 Responsividade */
 @media (max-width: 1024px) {
   header {
     flex-direction: column;
@@ -557,7 +542,6 @@ header {
     margin-left: 6%;
   }
 
-  /* 🔧 CORREÇÃO DA DIV 1 (responsiva em tablets) */
   #divprincipal {
     flex-direction: column;
     align-items: center;
@@ -645,17 +629,24 @@ header {
   }
 }
 
-/* --- Celulares (até 600px) --- */
 @media (max-width: 600px) {
   #fonteh1 {
     font-size: 40px;
+  }
+
+  .footer-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo {
+    justify-content: center;
   }
 
   #fonteh5 {
     font-size: 18px;
   }
 
-  /* 🔧 CORREÇÃO EXTRA DA DIV 1 (em celulares) */
   #divprincipal {
     flex-direction: column;
     align-items: center;
@@ -668,16 +659,15 @@ header {
     padding: 0 10px;
   }
 
-  /* 🔧 Correção para imagem responsiva na div principal */
   #logob2 {
-    max-width: 100%;
     width: 100%;
+    max-width: 550px;
     height: auto;
-    margin: 0 auto;
+    border-radius: 10px;
+    margin: 5% auto;
     display: block;
   }
 
-  /* garante que o contêiner não limite a imagem */
   .imagem {
     margin: 0 auto;
     padding: 0;
@@ -690,10 +680,6 @@ header {
     width: 130px;
     height: 45px;
     font-size: 14px;
-  }
-
-  .divfora {
-    height: auto;
   }
 
   #video {
@@ -734,12 +720,11 @@ header {
     width: 80%;
   }
 
-  .footer-logo {
-    top: -10px;
-  }
-
   #pett {
-    width: 180px;
+    width: 160px;
+    height: auto;
+    margin-bottom: 30px;
+    background-color: white;
   }
 
   .newsletter input {
